@@ -765,7 +765,7 @@ static bool ggml_is_view_op(enum ggml_op op) {
 #endif
 //kcpp yolo fix: decreased from 30 to 16 in order to try resolve tts oom issues. edit: reverted, new hack to solve kokoro added as kcpp_kokoro_alloc_hack
 #ifndef GGML_SCHED_MAX_SPLIT_INPUTS
-#define GGML_SCHED_MAX_SPLIT_INPUTS 30
+#define GGML_SCHED_MAX_SPLIT_INPUTS 50
 #endif
 
 #ifndef GGML_SCHED_MAX_COPIES
